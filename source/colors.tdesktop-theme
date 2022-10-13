@@ -30,10 +30,9 @@ gray: #2d3436;
 lightGray: #636e72;
 
 windowBg: black;
-windowFg: gray;
-windowBgOver: black; // цвет панели приложения
+windowFg: lightGray;
+windowBgOver: lightGray;
 windowBgRipple: lightGray; // цвет, которым заполняются кнопки при нажатии на них
-
 windowFgOver: windowFg;
 windowSubTextFg: #999999;
 windowSubTextFgOver: #919191;
@@ -44,6 +43,7 @@ windowFgActive: #ffffff;
 windowActiveTextFg: #168acd;
 windowShadowFg: #000000;
 windowShadowFgFallback: #f1f1f1;
+
 shadowFg: #00000018;
 slideFadeOutBg: #0000003c;
 slideFadeOutShadowFg: windowShadowFg;
@@ -97,7 +97,7 @@ sliderBgActive: windowBgActive;
 tooltipBg: #eef2f5;
 tooltipFg: #5d6c80;
 tooltipBorderFg: #c9d1db;
-titleBg: windowBgOver;
+titleBg: windowBg; // цвет самой верхней панели приложения
 titleShadow: #00000003;
 titleButtonFg: #ababab;
 titleButtonBgOver: #e5e5e5;
@@ -118,7 +118,7 @@ boxBg: windowBg;
 boxTextFg: windowFg;
 boxTextFgGood: #4ab44a;
 boxTextFgError: #d84d4d;
-boxTitleFg: #404040;
+boxTitleFg: #ffffff;
 boxSearchBg: boxBg;
 boxSearchCancelIconFg: cancelIconFg;
 boxSearchCancelIconFgOver: cancelIconFgOver;
@@ -148,7 +148,7 @@ introCoverPlaneTop: #ffffff;
 dialogsMenuIconFg: menuIconFg;
 dialogsMenuIconFgOver: menuIconFgOver;
 dialogsBg: windowBg;
-dialogsNameFg: windowBoldFg;
+dialogsNameFg: lightGray; // названия диалогов
 dialogsChatIconFg: dialogsNameFg;
 dialogsDateFg: windowSubTextFg;
 dialogsTextFg: windowSubTextFg;
@@ -157,14 +157,14 @@ dialogsDraftFg: #dd4b39;
 dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: windowFgActive;
 dialogsSendingIconFg: #c1c1c1;
-dialogsSentIconFg: #2ca6e8;
-dialogsUnreadBg: #ffffff; // цвет фона счетчика не прочитанных сообщений
-dialogsUnreadBgMuted: #bbbbbb; // цвет фона счетчика не прочитанных сообщений (заглушенных)
-dialogsUnreadFg: black; // цвет текста счетчика непрочитанных сообщений
+dialogsSentIconFg: lightGray; // птички в списке диалогов
+dialogsUnreadBg: #ffffff; // фон счетчика не прочитанных сообщений
+dialogsUnreadBgMuted: #bbbbbb; // фон счетчика не прочитанных сообщений (заглушенных)
+dialogsUnreadFg: black; // текст счетчика непрочитанных сообщений
 dialogsArchiveFg: #525252;
-dialogsOnlineBadgeFg: #4dc920;
-dialogsBgOver: windowBgOver;
-dialogsNameFgOver: windowBoldFgOver;
+dialogsOnlineBadgeFg: #ffffff; // индикатор нахождения в сети
+dialogsBgOver: gray; // фон диалога при наведении
+dialogsNameFgOver: #ffffff; // название диалога при наведении
 dialogsChatIconFgOver: dialogsNameFgOver;
 dialogsDateFgOver: windowSubTextFgOver;
 dialogsTextFgOver: windowSubTextFgOver;
@@ -178,11 +178,11 @@ dialogsUnreadBgOver: dialogsUnreadBg;
 dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
 dialogsUnreadFgOver: dialogsUnreadFg;
 dialogsArchiveFgOver: #525252;
-dialogsBgActive: #419fd9;
-dialogsNameFgActive: windowFgActive;
+dialogsBgActive: #ffffff; // фон активного диалога в списке чатов
+dialogsNameFgActive: black; // имя активного диалога в списке чатов
 dialogsChatIconFgActive: dialogsNameFgActive;
-dialogsDateFgActive: windowFgActive;
-dialogsTextFgActive: windowFgActive;
+dialogsDateFgActive: lightGray; // дата активного диалога в списке чатов
+dialogsTextFgActive: lightGray; // текст активного диалога в списке чатов
 dialogsTextFgServiceActive: dialogsTextFgActive;
 dialogsDraftFgActive: #c6e1f7;
 dialogsVerifiedIconBgActive: dialogsTextFgActive;
@@ -192,7 +192,7 @@ dialogsSentIconFgActive: dialogsTextFgActive;
 dialogsUnreadBgActive: dialogsTextFgActive;
 dialogsUnreadBgMutedActive: dialogsDraftFgActive;
 dialogsUnreadFgActive: dialogsBgActive;
-dialogsOnlineBadgeFgActive: #ffffff;
+dialogsOnlineBadgeFgActive: #000000; // индикатор нахождения в сети активного диалога в списке чатов
 dialogsForwardBg: dialogsBgActive;
 dialogsForwardFg: dialogsNameFgActive;
 searchedBarBg: windowBgOver;
@@ -207,8 +207,8 @@ emojiIconFg: #999999;
 stickerPanDeleteBg: #000000cc;
 stickerPanDeleteFg: windowFgActive;
 stickerPreviewBg: #ffffffb0;
-historyTextInFg: windowFg;
-historyTextOutFg: windowFg;
+historyTextInFg: #ffffff; // текст входящих сообщений
+historyTextOutFg: black; // текст отправленных сообщений
 historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
 historyFileNameInFg: historyTextInFg;
@@ -250,7 +250,7 @@ historyScrollBg: #00000000;
 historyScrollBgOver: #0000001a;
 msgInBg: windowBg;
 msgInBgSelected: #bbe1fc;
-msgOutBg: #def1fd;
+msgOutBg: #ffffff; // фон отправленных сообщений хостом
 msgOutBgSelected: #bbe1fc;
 msgSelectOverlay: #358cd44c;
 msgStickerOverlay: #358cd47f;
