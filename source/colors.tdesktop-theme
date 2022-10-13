@@ -1,35 +1,16 @@
-//
-// This is a sample Telegram Desktop theme file.
-// It was generated from the 'colors.palette' style file.
-//
-// To create a theme with a background image included you should
-// put two files in a .zip archive:
-//
-// First one is the color scheme like the one you're viewing
-// right now, this file should be named 'colors.tdesktop-theme'.
-//
-// Second one should be the background image and it can be named
-// 'background.jpg', 'background.png', 'tiled.jpg' or 'tiled.png'.
-// You should name it 'background' (if you'd like it not to be tiled),
-// or it can be named 'tiled' (if you'd like it to be tiled).
-//
-// After that you need to change the extension of your .zip archive
-// to 'tdesktop-theme', so you'll have:
-//
-// mytheme.tdesktop-theme
-// |-colors.tdesktop-theme
-// |-background.jpg (or tiled.jpg, background.png, tiled.png)
-//
-
 // name: Nature White;
-// shortname: naturewhite;
 
-// colors
-black: #212121;
+// --- COLORS --- //
+
+black: #0f0f0f;
+dark: #212121;
 gray: #2d3436;
-lightGray: #636e72;
+lightGray: #cccccc;
+white: #ffffff;
 
-windowBg: black;
+// --- END COLORS --- //
+
+windowBg: dark;
 windowFg: lightGray;
 windowBgOver: lightGray;
 windowBgRipple: lightGray; // цвет, которым заполняются кнопки при нажатии на них
@@ -158,11 +139,11 @@ dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: windowFgActive;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: lightGray; // птички в списке диалогов
-dialogsUnreadBg: #ffffff; // фон счетчика не прочитанных сообщений
-dialogsUnreadBgMuted: #bbbbbb; // фон счетчика не прочитанных сообщений (заглушенных)
-dialogsUnreadFg: black; // текст счетчика непрочитанных сообщений
+dialogsUnreadBg: white; // фон счетчика не прочитанных сообщений
+dialogsUnreadBgMuted: gray; // фон счетчика не прочитанных сообщений (заглушенных)
+dialogsUnreadFg: dark; // текст счетчика непрочитанных сообщений
 dialogsArchiveFg: #525252;
-dialogsOnlineBadgeFg: #ffffff; // индикатор нахождения в сети
+dialogsOnlineBadgeFg: white; // индикатор нахождения в сети
 dialogsBgOver: gray; // фон диалога при наведении
 dialogsNameFgOver: #ffffff; // название диалога при наведении
 dialogsChatIconFgOver: dialogsNameFgOver;
@@ -179,10 +160,10 @@ dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
 dialogsUnreadFgOver: dialogsUnreadFg;
 dialogsArchiveFgOver: #525252;
 dialogsBgActive: #ffffff; // фон активного диалога в списке чатов
-dialogsNameFgActive: black; // имя активного диалога в списке чатов
+dialogsNameFgActive: dark; // имя активного диалога в списке чатов
 dialogsChatIconFgActive: dialogsNameFgActive;
-dialogsDateFgActive: lightGray; // дата активного диалога в списке чатов
-dialogsTextFgActive: lightGray; // текст активного диалога в списке чатов
+dialogsDateFgActive: black; // дата активного диалога в списке чатов
+dialogsTextFgActive: gray; // текст активного диалога в списке чатов
 dialogsTextFgServiceActive: dialogsTextFgActive;
 dialogsDraftFgActive: #c6e1f7;
 dialogsVerifiedIconBgActive: dialogsTextFgActive;
@@ -192,7 +173,7 @@ dialogsSentIconFgActive: dialogsTextFgActive;
 dialogsUnreadBgActive: dialogsTextFgActive;
 dialogsUnreadBgMutedActive: dialogsDraftFgActive;
 dialogsUnreadFgActive: dialogsBgActive;
-dialogsOnlineBadgeFgActive: #000000; // индикатор нахождения в сети активного диалога в списке чатов
+dialogsOnlineBadgeFgActive: black; // индикатор нахождения в сети активного диалога в списке чатов
 dialogsForwardBg: dialogsBgActive;
 dialogsForwardFg: dialogsNameFgActive;
 searchedBarBg: windowBgOver;
@@ -207,7 +188,7 @@ emojiIconFg: #999999;
 stickerPanDeleteBg: #000000cc;
 stickerPanDeleteFg: windowFgActive;
 stickerPreviewBg: #ffffffb0;
-historyTextInFg: #ffffff; // текст входящих сообщений
+historyTextInFg: white; // текст входящих сообщений
 historyTextOutFg: black; // текст отправленных сообщений
 historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
