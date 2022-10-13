@@ -21,10 +21,19 @@
 // |-background.jpg (or tiled.jpg, background.png, tiled.png)
 //
 
-windowBg: #ffffff;
-windowFg: #000000;
-windowBgOver: #f1f1f1;
-windowBgRipple: #e5e5e5;
+// name: Nature White;
+// shortname: naturewhite;
+
+// colors
+black: #212121;
+gray: #2d3436;
+lightGray: #636e72;
+
+windowBg: black;
+windowFg: gray;
+windowBgOver: black; // цвет панели приложения
+windowBgRipple: lightGray; // цвет, которым заполняются кнопки при нажатии на них
+
 windowFgOver: windowFg;
 windowSubTextFg: #999999;
 windowSubTextFgOver: #919191;
@@ -149,9 +158,9 @@ dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: windowFgActive;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: #2ca6e8;
-dialogsUnreadBg: windowBgActive;
-dialogsUnreadBgMuted: #bbbbbb;
-dialogsUnreadFg: windowFgActive;
+dialogsUnreadBg: #ffffff; // цвет фона счетчика не прочитанных сообщений
+dialogsUnreadBgMuted: #bbbbbb; // цвет фона счетчика не прочитанных сообщений (заглушенных)
+dialogsUnreadFg: black; // цвет текста счетчика непрочитанных сообщений
 dialogsArchiveFg: #525252;
 dialogsOnlineBadgeFg: #4dc920;
 dialogsBgOver: windowBgOver;
