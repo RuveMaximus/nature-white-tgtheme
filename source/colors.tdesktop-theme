@@ -31,13 +31,20 @@ windowBoldFg: #222222;
 windowBoldFgOver: #222222;
 windowBgActive: #40a7e3;
 windowFgActive: #ffffff;
-windowActiveTextFg: #168acd;
+windowActiveTextFg: lgray; // активный текст, например онлайн статус
 windowShadowFg: #000000;
 windowShadowFgFallback: #f1f1f1;
 
-sideBarBg: black; // фон панели с папками
-sideBarTextFg: gray; // подписи папок
-sideBarIconFg: gray; // цвет иконки папок
+sideBarBg: black;
+sideBarTextFg: gray; 
+sideBarIconFg: gray; 
+sideBarIconFgActive: lgray;
+sideBarTextFgActive: lgray;
+sideBarBgActive: gray;
+sideBarBadgeBg: white; 
+sideBarBadgeFg: black; 
+sideBarBadgeBgMuted: gray; 
+sideBarBgRipple: gray; 
 
 shadowFg: #00000018;
 slideFadeOutBg: #0000003c;
@@ -144,7 +151,7 @@ contactsBgOver: windowBgOver;
 contactsNameFg: boxTextFg;
 contactsStatusFg: windowSubTextFg;
 contactsStatusFgOver: windowSubTextFgOver;
-contactsStatusFgOnline: windowActiveTextFg;
+contactsStatusFgOnline: windowActiveTextFg; // 
 
 photoCropFadeBg: layerBg;
 photoCropPointFg: #ffffff7f;
@@ -168,14 +175,14 @@ dialogsNameFg: lgray;
 dialogsChatIconFg: dialogsNameFg;
 dialogsDateFg: windowSubTextFg;
 dialogsTextFg: windowSubTextFg;
-dialogsTextFgService: windowActiveTextFg;
+dialogsTextFgService: white; // имя отправителя в группе или тип медиа-контекта в сообщении
 dialogsDraftFg: #dd4b39;
 dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: windowFgActive;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: lgray;
 dialogsUnreadBg: white;
-dialogsUnreadBgMuted: gray;
+dialogsUnreadBgMuted: lgray;
 dialogsUnreadFg: dark;
 dialogsArchiveFg: #525252;
 dialogsOnlineBadgeFg: white;
@@ -211,6 +218,7 @@ dialogsUnreadFgActive: dialogsBgActive;
 dialogsOnlineBadgeFgActive: black;
 dialogsForwardBg: dialogsBgActive;
 dialogsForwardFg: dialogsNameFgActive;
+dialogsRippleBgActive: white; // фон диалога при нажатии
 
 searchedBarBg: windowBgOver;
 searchedBarBorder: shadowFg;
@@ -278,22 +286,22 @@ msgSelectOverlay: #358cd44c;
 msgStickerOverlay: #358cd47f;
 msgInServiceFg: windowActiveTextFg;
 msgInServiceFgSelected: windowActiveTextFg;
-msgOutServiceFg: windowActiveTextFg;
+msgOutServiceFg: dark; // Отправтель сообщения в сообщении от пользователя
 msgOutServiceFgSelected: windowActiveTextFg;
-msgInShadow: #748ea229;
+msgInShadow: dark; // тень входящих сообщений
 msgInShadowSelected: #1d629730;
-msgOutShadow: #0d5a911a;
+msgOutShadow: white; // тень отправленных сообщений
 msgOutShadowSelected: #2e74aa29;
 msgInDateFg: #a0acb6;
 msgInDateFgSelected: #6a9cc5;
 msgOutDateFg: gray; // Дата в отправленных сообщениях
 msgOutDateFgSelected: #6ca0c2;
 msgServiceFg: windowFgActive;
-msgServiceBg: #00518059;
+msgServiceBg: #21212159; // фон служебной инфомарции в сообщениях
 msgServiceBgSelected: #62afdda2;
 msgInReplyBarColor: activeLineFg;
 msgInReplyBarSelColor: activeLineFg;
-msgOutReplyBarColor: historyOutIconFg;
+msgOutReplyBarColor: dark; // цвет полоски при ответе на сообщение пользователем
 msgOutReplyBarSelColor: historyOutIconFgSelected;
 msgImgReplyBarColor: msgServiceFg;
 msgInMonoFg: #4e7391;
@@ -306,10 +314,10 @@ msgFileThumbLinkInFg: #168acd;
 msgFileThumbLinkInFgSelected: lightButtonFgOver;
 msgFileThumbLinkOutFg: #0a8bd0;
 msgFileThumbLinkOutFgSelected: lightButtonFgOver;
-msgFileInBg: windowBgActive;
+msgFileInBg: lgray; // иконка входящих файлов
 msgFileInBgOver: #4eade3;
 msgFileInBgSelected: #51a3d3;
-msgFileOutBg: windowBgActive;
+msgFileOutBg: black; // иконка отправленных файлов
 msgFileOutBgOver: #4eade3;
 msgFileOutBgSelected: #51a3d3;
 msgFile1Bg: #72b1df;
@@ -328,17 +336,18 @@ msgFile4Bg: #efc274;
 msgFile4BgDark: #e6a561;
 msgFile4BgOver: #dc9c5a;
 msgFile4BgSelected: #b19d84;
-msgWaveformInActive: windowBgActive;
+msgWaveformInActive: lgray; // прогресс прослушивания входящих гс
 msgWaveformInActiveSelected: #51a3d3;
-msgWaveformInInactive: #d4dee6;
+msgWaveformInInactive: gray; // линия громкости входящих гс 
 msgWaveformInInactiveSelected: #9cc1e1;
-msgWaveformOutActive: windowBgActive;
+msgWaveformOutActive: gray; // прогресс прослушивания исходящих гс
 msgWaveformOutActiveSelected: #51a3d3;
-msgWaveformOutInactive: #b3d4e7;
+msgWaveformOutInactive: lgray; // линия громкости исходящих гс 
 msgWaveformOutInactiveSelected: #87bcdb;
 msgBotKbOverBgAdd: #ffffff20;
 msgBotKbIconFg: msgServiceFg;
 msgBotKbRippleBg: #00000020;
+botKbColor: white; // текст в reply клавиатурах
 
 mediaInFg: msgInDateFg;
 mediaInFgSelected: msgInDateFgSelected;
@@ -363,7 +372,7 @@ historyComposeAreaFg: historyTextInFg;
 historyComposeAreaFgService: msgInDateFg;
 historyComposeIconFg: menuIconFg;
 historyComposeIconFgOver: menuIconFgOver;
-historySendIconFg: windowBgActive;
+historySendIconFg: white; // кнопка отправки сообщения
 historySendIconFgOver: windowBgActive;
 historyPinnedBg: historyComposeAreaBg;
 historyReplyBg: historyComposeAreaBg;

@@ -18,6 +18,18 @@
 |windowShadowFg        | - |
 |windowShadowFgFallback| - |
 
+### sidebar
+|sideBarBg| Фон панели с папками |
+|sideBarTextFg| Аодписи папок |
+|sideBarIconFg| Иконка папок |
+|sideBarIconFgActive| Иконка активной папки |
+|sideBarTextFgActive| Текст активной папки |
+|sideBarBgActive| Фон активной папки |
+|sideBarBadgeBg| Фон счетчика сообщений активной папки |
+|sideBarBadgeFg| Текст счетчика сообщений активной папки |
+|sideBarBadgeBgMuted| Текст счетчика сообщений неактивной папки |
+|sideBarBgRipple| Эффект при нажатии на папку |
+
 ### scroll 
 |Переменная     |Описание       |
 |---------------|---------------|
