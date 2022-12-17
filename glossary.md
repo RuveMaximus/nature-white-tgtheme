@@ -19,6 +19,8 @@
 |windowShadowFgFallback| - |
 
 ### sidebar
+|Переменная |Описание |
+|-----------|---------|
 |sideBarBg| Фон панели с папками |
 |sideBarTextFg| Аодписи папок |
 |sideBarIconFg| Иконка папок |
